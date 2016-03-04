@@ -57,6 +57,13 @@ var crayola1990 = [
 	'Timberwolf',
 	'Antique Brass'
 ];
+var crayonSlug = [];
+for(var i=0; i< crayola1990.length; i++){
+    var temp1 = crayola1990[i].toLowerCase();
+    var temp2 = temp1.split(' ');
+    temp1 = temp2.join('-');
+    crayonSlug.push(temp1);
+}
 
 //create a loop that will iterate over each item in the array and then use the String methods to modify the value at the current position in the array
 
